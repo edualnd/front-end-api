@@ -21,7 +21,7 @@ const loadProperties = async () =>{
                 <p class="endereco">${element.address}</p>
                 <p class="nome">${element.property}</p>
                 <button onclick="removeProperty(${element.id})">Excluir</button>
-                <button onclick="prepareToEdit(${element.id}, ${element.type}, (${element.address}),${element.rooms},${element.property})">Editar</button>
+                <button onclick="prepareToEdit(${element.id}, '${element.type}', '${element.address}','${element.rooms}','${element.property}')">Editar</button>
             </div>
         </div>
         `
@@ -62,12 +62,11 @@ const createProperty = async (event) =>{
    
 }
 const prepareToEdit = (id, type, address, rooms, property) =>{
-    console.log("aa")
-        document.getElementById("propertyId").value = id
-        document.getElementById("type").value = type
-        document.getElementById("address").value = address
-        document.getElementById("rooms").value = rooms
-        document.getElementById("property").value = property
+        document.getElementById('propertyId').value = id
+        document.getElementById('type').value = type
+        document.getElementById('address').value = address
+        document.getElementById('rooms').value = rooms
+        document.getElementById('property').value = property
 
 }
 const editProperty = async (event) =>{
