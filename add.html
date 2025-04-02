@@ -7,17 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
 </head>
-<body onload="loadProperties()">
+<body>
     <header>
         <h1>Imobiliaria IfHome</h1>
-        <button><a href="add.html">Adicionar imovel</a></button>
     </header>
-    <div id="property-list">
-    </div>
-    <div id="edit-property">
-        <h1>Editar imovel</h1>
-        <form onsubmit="editProperty(event)">
-            <input type="hidden" name="propertyId" id="propertyId">
+    <div id="add-property">
+        <h1>Cadastrar imovel</h1>
+        <form onsubmit="createProperty(event)">
             <label for="type">Tipo:</label>
             <input type="text" name="type" id="type">
 
@@ -29,7 +25,7 @@
 
             <label for="property">Tipo de imovel:</label>
             <input type="text" name="property" id="property">
-            <button type="submit">Editar</button>
+            <button type="submit">Cadastrar</button>
         </form>
     </div>
 </body>

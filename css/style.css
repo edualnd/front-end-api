@@ -36,7 +36,7 @@ header button:hover{
 }
 .property-card{
     background-color: #d6d6d6;
-    width: 250px;
+    width: 270px;
     border: 1px solid #CCC;
     border-radius: 10px;
     display: flex;
@@ -55,4 +55,23 @@ header button:hover{
 }
 .property-card .texts h5{
     font-size: 18px;
+}
+.icon-property img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+
+#add-property {
+    margin: 0 auto;
+    background-color: antiquewhite;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+body h1{
+    
 }
