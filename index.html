@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROPERTY CLIENT</title>
+    <title>Dolphin Imobiliaria</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
 </head>
 <body onload="loadProperties()">
     <header>
-        <h1>Imobiliaria IfHome</h1>
+        <h1><a href="index.html"><span>Dolphin</span> Imobiliaria</a></h1>
         <button><a href="add.html">Adicionar imovel</a></button>
     </header>
     <div id="property-list">
     </div>
-    <div id="edit-property">
+    <div id="edit-property" class="modal-property">
         <h1>Editar imovel</h1>
         <form onsubmit="editProperty(event)">
             <input type="hidden" name="propertyId" id="propertyId">

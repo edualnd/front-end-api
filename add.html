@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROPERTY CLIENT</title>
+    <title>Cadastrar</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Imobiliaria IfHome</h1>
+        <h1><a href="index.html"><span>Dolphin</span> Imobiliaria</a></h1>
     </header>
-    <div id="add-property">
+    <div id="add-property" class="modal-property">
         <h1>Cadastrar imovel</h1>
         <form onsubmit="createProperty(event)">
             <label for="type">Tipo:</label>
-            <input type="text" name="type" id="type">
+            <select name="type" id="type">
+                <option value="Venda">Venda</option>
+                <option value="Aluguel">Aluguel</option>
+            </select>
+
+            <label for="property">Tipo de imovel:</label>
+            <select name="property" id="property">
+                <option value="Casa">Casa</option>
+                <option value="Apartamento">Apartamento</option>
+                <option value="Terreno">Terreno</option>
+            </select>
 
             <label for="address">Endereço:</label>
             <input type="text" name="address" id="address">
@@ -23,8 +33,7 @@
             <label for="rooms">Quartos:</label>
             <input type="number" name="rooms" id="rooms">
 
-            <label for="property">Tipo de imovel:</label>
-            <input type="text" name="property" id="property">
+            
             <button type="submit">Cadastrar</button>
         </form>
     </div>

@@ -14,12 +14,11 @@ const loadProperties = async () =>{
         propertyList.innerHTML += `
             <div class="property-card">
             <div class="icon-property">
-            <img src="${photo}" alt="">
+            <img src="${photo}" alt="${element.property}" title="${element.property}">
             </div>
             <div class="texts">
                 <h5 class="type">${element.type}</h5>
                 <p class="endereco">${element.address}</p>
-                <p class="nome">${element.property}</p>
                 <button onclick="removeProperty(${element.id})">Excluir</button>
                 <button onclick="prepareToEdit(${element.id}, '${element.type}', '${element.address}','${element.rooms}','${element.property}')">Editar</button>
             </div>
